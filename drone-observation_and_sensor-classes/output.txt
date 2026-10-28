@@ -1,0 +1,11 @@
+Drone Observation
+-----------------
+Drone ID: DRONE-001
+Latitude: 9.4981
+Longitude: 76.3388
+Altitude: 120.5 m
+
+Sensor Readings:
+Temperature: 32.5 °C
+Humidity: 68 %
+Battery Voltage: 11.7 V
