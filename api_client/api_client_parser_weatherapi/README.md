@@ -11,15 +11,15 @@ tests using `unittest` and mock objects.
 | `api_client.py` | `WeatherAPIClient` - sends the HTTP GET request |
 | `data_parser.py` | `WeatherDataParser` - converts JSON to a pandas DataFrame |
 | `main.py` | Ties the client and parser together and prints the result |
-| `test_project.py` | Unit tests (mocked, no internet needed) |
+| `test_project.py` | Unit tests (mocked) |
 | `requirements.txt` | Dependencies: `requests`, `pandas` |
 
 ## How to run
 
 ```
 pip install -r requirements.txt
-python main.py                          # default location
-python main.py --lat 25.2 --lon 55.3    # custom location
+python main.py                          
+python main.py --lat 25.2 --lon 55.3    
 python -m unittest -v                   # run the tests
 ```
 
@@ -116,4 +116,9 @@ are hard to trigger on a real API.
 
 Weather data by [Open-Meteo.com](https://open-meteo.com/), licensed under
 [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). The free API needs no
-key and is for non-commercial use.
+key and is for non-commercial use. 
+
+
+
+
+**NidhinDaniel**
