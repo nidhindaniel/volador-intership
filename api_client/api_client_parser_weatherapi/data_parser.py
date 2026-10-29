@@ -3,11 +3,6 @@ class WeatherParseError(ValueError):
     """Raised when the API response does not have the expected structure."""
 class WeatherDataParser:
     def parse(self, payload):
-        """Convert the 'hourly' section of the response into a DataFrame.
-
-        The API returns parallel lists (one list per variable). Each list
-        becomes a column, and 'time' becomes a datetime index.
-        """
         if not isinstance(payload, dict):
             raise WeatherParseError("Payload must be a dictionary")
 
